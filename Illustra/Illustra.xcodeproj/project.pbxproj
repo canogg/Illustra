@@ -149,8 +149,7 @@
 		952E2579284F759B00D7CF8E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				641C3966284F6B33004ADACF /* Main.storyboard */,
-				641C396B284F6B34004ADACF /* LaunchScreen.storyboard */,
+				641C3964284F6B33004ADACF /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,7 +157,8 @@
 		952E257A284F75B300D7CF8E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				641C3964284F6B33004ADACF /* ViewController.swift */,
+				641C3966284F6B33004ADACF /* Main.storyboard */,
+				641C396B284F6B34004ADACF /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
