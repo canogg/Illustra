@@ -13,7 +13,7 @@ class Illustrator{
     var profilePicture: String
     
     
-    public func  AvaliationCalcule() -> Float{
+    public func avaliationCalcule() -> Float{
         return 0.5
     }
     
