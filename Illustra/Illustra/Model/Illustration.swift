@@ -6,6 +6,14 @@
 //
 
 import Foundation
+import UIKit
 
-class Illustration{
+class Illustration {
+    var name: String
+    var image: UIImage
+    
+    init(name: String) {
+        self.name = name
+        self.image = UIImage(named: name)!
+    }
 }
