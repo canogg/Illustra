@@ -162,7 +162,6 @@
 				641C3964284F6B33004ADACF /* ViewController.swift */,
 				644B9599285215D10046800C /* ProfileController.swift */,
 				98F18A282858AE450009C603 /* MyCollectionViewCell.swift */,
-				98F18A292858AE450009C603 /* MyCollectionViewCell.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +172,7 @@
 				641C3966284F6B33004ADACF /* Main.storyboard */,
 				641C396B284F6B34004ADACF /* LaunchScreen.storyboard */,
 				644B9596285212FF0046800C /* Profile.storyboard */,
+				98F18A292858AE450009C603 /* MyCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
