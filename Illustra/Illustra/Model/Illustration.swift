@@ -11,7 +11,7 @@ import UIKit
 class Illustration {
     var name: String
     var image: UIImage
-    
+
     init(name: String) {
         self.name = name
         self.image = UIImage(named: name)!

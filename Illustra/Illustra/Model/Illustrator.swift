@@ -7,20 +7,17 @@
 
 import Foundation
 
-class Illustrator{
+class Illustrator {
     var name: String
     var evaluation: Float
     var profilePicture: String
-    
-    
-    public func avaliationCalcule() -> Float{
+
+    public func avaliationCalcule() -> Float {
         return 0.5
     }
-    
     init(name: String, evaluation: Float, profilePicture: String) {
         self.name = name
         self.evaluation = evaluation
         self.profilePicture = profilePicture
     }
-    
 }
