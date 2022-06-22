@@ -11,6 +11,21 @@ class ViewController: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
 
+    let illustrationImage: [UIImage] = [
+        UIImage(named: "arena")!,
+        UIImage(named: "line")!,
+        UIImage(named: "contemplation")!,
+        UIImage(named: "showman")!,
+        UIImage(named: "applause")!,
+        UIImage(named: "contemplation")!,
+        UIImage(named: "peaceof")!,
+        UIImage(named: "arena")!,
+        UIImage(named: "hunter")!,
+        UIImage(named: "showman")!,
+        UIImage(named: "hunter")!,
+        UIImage(named: "blueturtle")!
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,7 +48,7 @@ extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
 
-        print("You tapped me")
+        print("\(illustrationImage[indexPath.item])")
 
     }
 }
@@ -52,9 +67,9 @@ extension ViewController: UICollectionViewDataSource {
         ) as? MyCollectionViewCell else {
             return UICollectionViewCell()
         }
-
-        cell.configure(with: UIImage(named: "contemplation")!)
-//        cell.layer.cornerRadius = 12
+        cell.imageView.image = illustrationImage[indexPath.item]
+//        cell.configure(with: UIImage(named: "contemplation")!)
+        cell.layer.cornerRadius = 12
         cell.layer.shadowColor = UIColor.gray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 0)
         cell.layer.shadowRadius = 4
