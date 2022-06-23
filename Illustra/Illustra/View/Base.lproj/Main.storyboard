@@ -17,22 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnz-55-gxe">
-                                <rect key="frame" x="174" y="433" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="view2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYZ-zr-yeO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="RZS-54-HzD"/>
-=======
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6rh-dN-SEl">
                                 <rect key="frame" x="16" y="140" width="382" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,14 +49,7 @@
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
         </scene>
         <!--Navigation Controller-->
-<<<<<<< HEAD
-        <scene sceneID="faY-BK-qJE">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dV0-kJ-mju" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hft-db-bek">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-=======
+
         <scene sceneID="k54-c5-dkK">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ayr-fg-UKS" sceneMemberID="viewController">
@@ -84,12 +61,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-<<<<<<< HEAD
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YwN-D2-HvF"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RkL-Zv-CPo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-=======
+
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ArO-GM-WdI"/>
                     </connections>
                 </navigationController>
