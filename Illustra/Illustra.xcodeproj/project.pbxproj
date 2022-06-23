@@ -24,6 +24,8 @@
 		952E257F284F862200D7CF8E /* Galery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E257E284F862200D7CF8E /* Galery.swift */; };
 		952E2582284F864200D7CF8E /* Illustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E2581284F864100D7CF8E /* Illustration.swift */; };
 		952E2585284F86C500D7CF8E /* TypeIllustrationTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E2584284F86C500D7CF8E /* TypeIllustrationTags.swift */; };
+		98F18A2A2858AE450009C603 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F18A282858AE450009C603 /* MyCollectionViewCell.swift */; };
+		98F18A2B2858AE450009C603 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F18A292858AE450009C603 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		952E257E284F862200D7CF8E /* Galery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galery.swift; sourceTree = "<group>"; };
 		952E2581284F864100D7CF8E /* Illustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illustration.swift; sourceTree = "<group>"; };
 		952E2584284F86C500D7CF8E /* TypeIllustrationTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeIllustrationTags.swift; sourceTree = "<group>"; };
+		98F18A282858AE450009C603 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = Illustra/View/MyCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		98F18A292858AE450009C603 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyCollectionViewCell.xib; path = Illustra/View/MyCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,7 @@
 			children = (
 				641C3964284F6B33004ADACF /* ViewController.swift */,
 				644B9599285215D10046800C /* ProfileController.swift */,
+				98F18A282858AE450009C603 /* MyCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 				641C3966284F6B33004ADACF /* Main.storyboard */,
 				641C396B284F6B34004ADACF /* LaunchScreen.storyboard */,
 				644B9596285212FF0046800C /* Profile.storyboard */,
+				98F18A292858AE450009C603 /* MyCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F18A2B2858AE450009C603 /* MyCollectionViewCell.xib in Resources */,
 				641C396D284F6B34004ADACF /* LaunchScreen.storyboard in Resources */,
 				641C396A284F6B34004ADACF /* Assets.xcassets in Resources */,
 				644B9597285212FF0046800C /* Profile.storyboard in Resources */,
@@ -327,6 +334,7 @@
 			files = (
 				641C3965284F6B33004ADACF /* ViewController.swift in Sources */,
 				952E2585284F86C500D7CF8E /* TypeIllustrationTags.swift in Sources */,
+				98F18A2A2858AE450009C603 /* MyCollectionViewCell.swift in Sources */,
 				952E2582284F864200D7CF8E /* Illustration.swift in Sources */,
 				952E257F284F862200D7CF8E /* Galery.swift in Sources */,
 				952E257C284F761300D7CF8E /* Illustrator.swift in Sources */,
@@ -510,7 +518,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D77WMSS6V2;
+				DEVELOPMENT_TEAM = 8DK9849PTW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Illustra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -538,7 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = D77WMSS6V2;
+				DEVELOPMENT_TEAM = 8DK9849PTW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Illustra/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dV0-kJ-mju">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ayr-fg-UKS">
+>>>>>>> development
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Destaques-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Illustra" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnz-55-gxe">
                                 <rect key="frame" x="174" y="433" width="67" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -30,26 +32,69 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="RZS-54-HzD"/>
+=======
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6rh-dN-SEl">
+                                <rect key="frame" x="16" y="140" width="382" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gFb-Ed-UXN">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6rh-dN-SEl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9aN-tb-uol"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6rh-dN-SEl" secondAttribute="trailing" constant="16" id="CiM-Bb-3Xn"/>
+                            <constraint firstItem="6rh-dN-SEl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EUb-Kb-fal"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6rh-dN-SEl" secondAttribute="bottom" id="Y36-YY-uPn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Destaques" id="Lbp-h6-KbJ"/>
+                    <connections>
+                        <outlet property="collectionView" destination="6rh-dN-SEl" id="toO-yg-EhB"/>
+                    </connections>
+>>>>>>> development
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
         </scene>
         <!--Navigation Controller-->
+<<<<<<< HEAD
         <scene sceneID="faY-BK-qJE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dV0-kJ-mju" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hft-db-bek">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+=======
+        <scene sceneID="k54-c5-dkK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ayr-fg-UKS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JtF-1I-ryq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+>>>>>>> development
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YwN-D2-HvF"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RkL-Zv-CPo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+=======
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ArO-GM-WdI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1SI-58-jH3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+>>>>>>> development
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>

@@ -6,21 +6,50 @@
 //
 
 import Foundation
+import UIKit
 
-class Illustrator{
+class Illustrator {
     var name: String
-    var evaluation: Float
-    var profilePicture: String
-    
-    
-    public func avaliationCalcule() -> Float{
-        return 0.5
-    }
-    
-    init(name: String, evaluation: Float, profilePicture: String) {
+    var title: String
+    var illustrations: UIImage
+
+    init(name: String, title: String, illustrations: UIImage) {
         self.name = name
-        self.evaluation = evaluation
-        self.profilePicture = profilePicture
+        self.title = title
+        self.illustrations = illustrations
     }
-    
+
 }
+
+let illustrators: [Illustrator] = [
+    Illustrator(name: "Valeria Gruper",
+                 title: "Blue Turtle",
+                illustrations: UIImage(named: "blueturtle")!),
+    Illustrator(name: "Tracie Andrews",
+                 title: "Artine",
+                illustrations: UIImage(named: "artine")!),
+    Illustrator(name: "Aleksandr Kayda",
+                 title: "Hunter",
+                illustrations: UIImage(named: "hunter")!),
+    Illustrator(name: "Alexey Kot",
+                 title: "Magicred",
+                illustrations: UIImage(named: "magicred")!),
+    Illustrator(name: "Carllos Aribas",
+                 title: "Blindman",
+                illustrations: UIImage(named: "blindman")!),
+    Illustrator(name: "Jose Elgueta",
+                 title: "Contemplation",
+                illustrations: UIImage(named: "contemplation")!),
+    Illustrator(name: "Lilit Martirosyan",
+                 title: "Techna",
+                illustrations: UIImage(named: "techna")!),
+    Illustrator(name: "Omar Aqil",
+                 title: "Future Humanity",
+                illustrations: UIImage(named: "futurehumanity")!),
+    Illustrator(name: "Lilit Martirosyan",
+                 title: "Astralunar",
+                illustrations: UIImage(named: "astralunar")!),
+    Illustrator(name: "Tracie Andrews",
+                 title: "Misture",
+                illustrations: UIImage(named: "misture")!)
+]
