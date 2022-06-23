@@ -11,7 +11,6 @@ class MyCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var illustrationImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var illustratorProfileImageView: UIImageView!
     @IBOutlet weak var illustratorNameLabel: UILabel!
     @IBOutlet weak var footerView: UIView!
 
@@ -22,11 +21,9 @@ class MyCollectionViewCell: UICollectionViewCell {
         // Initialization code
         illustrationImageView.layer.cornerRadius = 12
         illustrationImageView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-//        footerCard.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-
     }
 
-    public func configure(with illustrator: Illustratorr) {
+    public func configure(with illustrator: Illustrator) {
         illustrationImageView.image = illustrator.illustrations
         illustratorNameLabel.text = illustrator.name
         titleLabel.text = illustrator.title
