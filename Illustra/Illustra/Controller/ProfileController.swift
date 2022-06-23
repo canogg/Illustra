@@ -50,10 +50,6 @@ extension ProfileController: UICollectionViewDataSource {
     }
 }
 
-class IllustrationCell: UICollectionViewCell {
-    @IBOutlet weak var image: UIImageView!
-}
-
 extension ProfileController: UITableViewDelegate {
 }
 
@@ -64,5 +60,4 @@ extension ProfileController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
-
 }
