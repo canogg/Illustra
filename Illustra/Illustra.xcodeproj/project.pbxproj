@@ -24,6 +24,7 @@
 		952E257F284F862200D7CF8E /* Galery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E257E284F862200D7CF8E /* Galery.swift */; };
 		952E2582284F864200D7CF8E /* Illustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E2581284F864100D7CF8E /* Illustration.swift */; };
 		952E2585284F86C500D7CF8E /* TypeIllustrationTags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952E2584284F86C500D7CF8E /* TypeIllustrationTags.swift */; };
+		95F86585286503A9003D1C39 /* IllustrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F86584286503A9003D1C39 /* IllustrationCell.swift */; };
 		98F18A2A2858AE450009C603 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F18A282858AE450009C603 /* MyCollectionViewCell.swift */; };
 		98F18A2B2858AE450009C603 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F18A292858AE450009C603 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		952E257E284F862200D7CF8E /* Galery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Galery.swift; sourceTree = "<group>"; };
 		952E2581284F864100D7CF8E /* Illustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illustration.swift; sourceTree = "<group>"; };
 		952E2584284F86C500D7CF8E /* TypeIllustrationTags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeIllustrationTags.swift; sourceTree = "<group>"; };
+		95F86584286503A9003D1C39 /* IllustrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllustrationCell.swift; sourceTree = "<group>"; };
 		98F18A282858AE450009C603 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = Illustra/View/MyCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		98F18A292858AE450009C603 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MyCollectionViewCell.xib; path = Illustra/View/MyCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -161,6 +163,7 @@
 			children = (
 				641C3964284F6B33004ADACF /* ViewController.swift */,
 				644B9599285215D10046800C /* ProfileController.swift */,
+				95F86584286503A9003D1C39 /* IllustrationCell.swift */,
 				98F18A282858AE450009C603 /* MyCollectionViewCell.swift */,
 			);
 			path = Controller;
@@ -337,6 +340,7 @@
 				98F18A2A2858AE450009C603 /* MyCollectionViewCell.swift in Sources */,
 				952E2582284F864200D7CF8E /* Illustration.swift in Sources */,
 				952E257F284F862200D7CF8E /* Galery.swift in Sources */,
+				95F86585286503A9003D1C39 /* IllustrationCell.swift in Sources */,
 				952E257C284F761300D7CF8E /* Illustrator.swift in Sources */,
 				641C3961284F6B33004ADACF /* AppDelegate.swift in Sources */,
 				641C3963284F6B33004ADACF /* SceneDelegate.swift in Sources */,
