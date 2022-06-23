@@ -31,6 +31,12 @@ extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
         print(indexPath.item)
+        let storyboard = UIStoryboard(name: "Profile", bundle: nil)
+
+        guard let controller = storyboard.instantiateViewController(
+            withIdentifier: "ProfileController"
+        ) as? ProfileController else { return print("Erro ao instanciar ProfileController")}
+        self.navigationController?.pushViewController(controller, animated: true)
 
     }
 }
