@@ -24,9 +24,10 @@ class MyCollectionViewCell: UICollectionViewCell {
     }
 
     public func configure(with illustrator: Illustrator) {
-        illustrationImageView.image = illustrator.illustrations
+        let nameIllustration = illustrator.illustrations[0]
+        illustrationImageView.image = UIImage(named: nameIllustration)
         illustratorNameLabel.text = illustrator.name
-        titleLabel.text = illustrator.title
+        titleLabel.text = nameIllustration
         footerView.backgroundColor = .white
         footerView.layer.cornerRadius = 12
         footerView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]

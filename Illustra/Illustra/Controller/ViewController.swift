@@ -30,14 +30,12 @@ extension ViewController: UICollectionViewDelegate {
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print(indexPath.item)
         let storyboard = UIStoryboard(name: "Profile", bundle: nil)
-
         guard let controller = storyboard.instantiateViewController(
-            withIdentifier: "ProfileController"
-        ) as? ProfileController else { return print("Erro ao instanciar ProfileController")}
+            withIdentifier: "ProfileController") as? ProfileController
+        else { return print("Erro ao instanciar ProfileController")}
+        controller.idUser = indexPath.row
         self.navigationController?.pushViewController(controller, animated: true)
-
     }
 }
 extension ViewController: UICollectionViewDataSource {
@@ -62,7 +60,6 @@ extension ViewController: UICollectionViewDataSource {
         cell.layer.shadowOffset = CGSize(width: 0, height: 0)
         cell.layer.shadowOpacity = 0.5
         cell.layer.masksToBounds = false
-
         return cell
     }
 }

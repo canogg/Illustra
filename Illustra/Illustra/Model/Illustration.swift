@@ -7,5 +7,5 @@
 
 import Foundation
 
-class Illustration{
+class Illustration {
 }

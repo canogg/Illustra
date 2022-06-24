@@ -82,7 +82,7 @@
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astralunar" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-Hu-bMd">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="astralunar" translatesAutoresizingMaskIntoConstraints="NO" id="N2h-Hu-bMd">
                                                                     <rect key="frame" x="0.0" y="0.0" width="288" height="231"/>
                                                                 </imageView>
                                                             </subviews>
@@ -108,7 +108,7 @@
                                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="Ozm-FW-Orn"/>
                                                 </connections>
                                             </collectionView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="Pyd-hc-tG1">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jose Elgueta" translatesAutoresizingMaskIntoConstraints="NO" id="Pyd-hc-tG1">
                                                 <rect key="frame" x="125.66666666666669" y="26.666666666666671" width="166" height="150"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                             </imageView>
@@ -125,12 +125,6 @@
                                                 <rect key="frame" x="331.66666666666669" y="1106.6666666666667" width="42" height="31"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="line.diagonal.arrow" catalog="system"/>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Illustra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmR-YX-JAN">
-                                                <rect key="frame" x="16" y="1.6666666666666643" width="51" height="21"/>
-                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -146,10 +140,8 @@
                                             <constraint firstAttribute="height" constant="1200" id="Goe-hf-HlR"/>
                                             <constraint firstItem="Prh-nV-rae" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="0.8" id="LDb-6a-b0L"/>
                                             <constraint firstItem="Pyd-hc-tG1" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="0.15" constant="11.5" id="M1B-4l-7jN"/>
-                                            <constraint firstItem="JmR-YX-JAN" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" multiplier="0.2" id="M6p-Af-lff"/>
                                             <constraint firstItem="zSV-Eh-Xfi" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" multiplier="1.7" id="Ndy-vu-w26"/>
                                             <constraint firstItem="mRD-we-kKS" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" id="Pu9-K2-c5O"/>
-                                            <constraint firstItem="JmR-YX-JAN" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="0.02" id="WBl-Z6-ox4"/>
                                             <constraint firstItem="Prh-nV-rae" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.9" id="WYc-ev-acL"/>
                                             <constraint firstItem="Prh-nV-rae" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" id="XHy-uJ-AXw"/>
                                             <constraint firstItem="ELQ-cX-bvG" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" id="Xbv-4x-3HL"/>
@@ -165,9 +157,7 @@
                                             <constraint firstItem="ELQ-cX-bvG" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.0258333" id="m68-ON-QO4"/>
                                             <constraint firstItem="dvV-uF-xN4" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.0283333" id="nGx-tk-6Ra"/>
                                             <constraint firstItem="zSV-Eh-Xfi" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.0258333" id="nvB-4y-ps2"/>
-                                            <constraint firstItem="JmR-YX-JAN" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.123188" id="o5R-by-gcz"/>
                                             <constraint firstItem="dvV-uF-xN4" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.676329" id="pxm-gu-SFh"/>
-                                            <constraint firstItem="JmR-YX-JAN" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.0175" id="rbP-WQ-QxN"/>
                                             <constraint firstItem="mRD-we-kKS" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="0.34" id="rp7-ei-H9d"/>
                                             <constraint firstItem="QMc-J8-XbC" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" id="tkz-iu-oJb"/>
                                             <constraint firstItem="IfC-1L-A9z" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.106667" id="vXy-OM-iOa"/>
@@ -195,7 +185,13 @@
                     <size key="freeformSize" width="415" height="1200"/>
                     <connections>
                         <outlet property="collectionView" destination="Prh-nV-rae" id="5l5-wo-meE"/>
+                        <outlet property="star1" destination="3A2-KU-lZe" id="jEo-Qh-pVd"/>
+                        <outlet property="star2" destination="xkk-si-j6f" id="MA7-s2-S2h"/>
+                        <outlet property="star3" destination="GID-6N-hL9" id="sFx-ry-GjC"/>
+                        <outlet property="star4" destination="axp-fH-S82" id="rrw-qM-LhA"/>
+                        <outlet property="star5" destination="fcm-x4-HLW" id="deT-rg-daD"/>
                         <outlet property="userImage" destination="Pyd-hc-tG1" id="eRF-n8-oOm"/>
+                        <outlet property="userName" destination="mRD-we-kKS" id="lIM-TP-tD7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -204,11 +200,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Jose Elgueta" width="752" height="752"/>
         <image name="astralunar" width="1920" height="1280"/>
         <image name="line.diagonal.arrow" catalog="system" width="128" height="113"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <image name="woman" width="854" height="862"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,46 +10,41 @@ import UIKit
 
 class Illustrator {
     var name: String
-    var title: String
-    var illustrations: UIImage
+    var evaluation: Int
+    var illustrations: [String]
 
-    init(name: String, title: String, illustrations: UIImage) {
+    init(name: String, evaluation: Int, illustrations: [String]) {
         self.name = name
-        self.title = title
+        self.evaluation = evaluation
         self.illustrations = illustrations
     }
 
 }
 
 let illustrators: [Illustrator] = [
-    Illustrator(name: "Valeria Gruper",
-                 title: "Blue Turtle",
-                illustrations: UIImage(named: "blueturtle")!),
-    Illustrator(name: "Tracie Andrews",
-                 title: "Artine",
-                illustrations: UIImage(named: "artine")!),
     Illustrator(name: "Aleksandr Kayda",
-                 title: "Hunter",
-                illustrations: UIImage(named: "hunter")!),
+                evaluation: 4,
+                illustrations: ["DockMan", "Hunter", "JunkCrab"]
+               ),
     Illustrator(name: "Alexey Kot",
-                 title: "Magicred",
-                illustrations: UIImage(named: "magicred")!),
+                evaluation: 3,
+                illustrations: ["Applause", "Arena", "MagiCred", "ShowMan"]),
     Illustrator(name: "Carllos Aribas",
-                 title: "Blindman",
-                illustrations: UIImage(named: "blindman")!),
+                evaluation: 5,
+                illustrations: ["BlindMan", "Feeling", "Line", "Simple"]),
     Illustrator(name: "Jose Elgueta",
-                 title: "Contemplation",
-                illustrations: UIImage(named: "contemplation")!),
+                evaluation: 4,
+                illustrations: ["Contemplation", "LongHapiness", "Peaceof", "Shoelace", "ThinkingAbout"]),
     Illustrator(name: "Lilit Martirosyan",
-                 title: "Techna",
-                illustrations: UIImage(named: "techna")!),
-    Illustrator(name: "Omar Aqil",
-                 title: "Future Humanity",
-                illustrations: UIImage(named: "futurehumanity")!),
-    Illustrator(name: "Lilit Martirosyan",
-                 title: "Astralunar",
-                illustrations: UIImage(named: "astralunar")!),
+                evaluation: 2,
+                illustrations: ["Astralunar", "MakeMoney", "SendingCut", "Techna"]),
+    Illustrator(name: "Osmar Aqil",
+                evaluation: 1,
+                illustrations: ["FutureHumanity", "Misterrob", "Roboonit"]),
     Illustrator(name: "Tracie Andrews",
-                 title: "Misture",
-                illustrations: UIImage(named: "misture")!)
+                evaluation: 5,
+                illustrations: ["Artine", "Misture", "Simble"]),
+    Illustrator(name: "Valeria Gruper",
+                evaluation: 4,
+                illustrations: ["BlueTurtle", "Flamingos", "PinkFlamingo"])
 ]
