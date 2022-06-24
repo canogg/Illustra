@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile Controller-->
+        <!--Perfil-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="ProfileController" id="Y6W-OH-hqX" customClass="ProfileController" customModule="Illustra" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,29 +113,66 @@
                                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                             </imageView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QMc-J8-XbC">
-                                                <rect key="frame" x="41.666666666666657" y="606" width="332" height="480"/>
+                                                <rect key="frame" x="0.0" y="612" width="415" height="456"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="65" id="noD-cB-Zxg" customClass="Cell" customModule="Illustra" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="44.666666030883789" width="415" height="65"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="noD-cB-Zxg" id="IuH-Pq-IPc">
+                                                            <rect key="frame" x="0.0" y="0.0" width="415" height="65"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XP5-kC-9wn">
+                                                                    <rect key="frame" x="31.000000000000004" y="4.9999999999999964" width="62.333333333333343" height="58.666666666666657"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOJ-Kl-fXD">
+                                                                    <rect key="frame" x="114.00000000000003" y="22.333333333333336" width="290.66666666666674" height="20.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="XP5-kC-9wn" firstAttribute="height" secondItem="IuH-Pq-IPc" secondAttribute="height" multiplier="0.9" id="0fP-uo-5Uk"/>
+                                                                <constraint firstItem="XP5-kC-9wn" firstAttribute="centerX" secondItem="IuH-Pq-IPc" secondAttribute="centerX" multiplier="0.3" id="1ca-x1-Gjo"/>
+                                                                <constraint firstAttribute="bottom" secondItem="XP5-kC-9wn" secondAttribute="bottom" constant="5" id="7jf-vT-oG9"/>
+                                                                <constraint firstItem="XP5-kC-9wn" firstAttribute="width" secondItem="IuH-Pq-IPc" secondAttribute="width" multiplier="0.15" priority="900" id="AeN-x8-iFW"/>
+                                                                <constraint firstItem="XP5-kC-9wn" firstAttribute="centerY" secondItem="IuH-Pq-IPc" secondAttribute="centerY" id="D3H-Ag-rhh"/>
+                                                                <constraint firstItem="GOJ-Kl-fXD" firstAttribute="width" secondItem="IuH-Pq-IPc" secondAttribute="width" multiplier="0.7" id="bNQ-oU-gY6"/>
+                                                                <constraint firstItem="GOJ-Kl-fXD" firstAttribute="centerY" secondItem="IuH-Pq-IPc" secondAttribute="centerY" id="i0y-8b-qTJ"/>
+                                                                <constraint firstItem="GOJ-Kl-fXD" firstAttribute="height" secondItem="IuH-Pq-IPc" secondAttribute="height" multiplier="0.308824" id="ktR-lh-P04"/>
+                                                                <constraint firstItem="GOJ-Kl-fXD" firstAttribute="centerX" secondItem="IuH-Pq-IPc" secondAttribute="centerX" multiplier="1.25" id="n2H-JK-tzS"/>
+                                                                <constraint firstItem="XP5-kC-9wn" firstAttribute="top" secondItem="IuH-Pq-IPc" secondAttribute="top" constant="5" id="zoi-bR-YXU"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="userComment" destination="GOJ-Kl-fXD" id="uIO-R9-KTc"/>
+                                                            <outlet property="userImage" destination="XP5-kC-9wn" id="d7M-ef-jSa"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
                                             </tableView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-uF-xN4">
-                                                <rect key="frame" x="42.333333333333343" y="1105" width="280.66666666666663" height="34"/>
+                                                <rect key="frame" x="42.333333333333343" y="1093" width="280.66666666666663" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSV-Eh-Xfi">
-                                                <rect key="frame" x="331.66666666666669" y="1106.6666666666667" width="42" height="31"/>
-                                                <buttonConfiguration key="configuration" style="filled" image="line.diagonal.arrow" catalog="system"/>
+                                                <rect key="frame" x="331.66666666666669" y="1094.6666666666667" width="42" height="31"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="chevron.forward.circle" catalog="system"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="ELQ-cX-bvG" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="0.51" id="028-va-pqp"/>
-                                            <constraint firstItem="QMc-J8-XbC" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.8" id="0Qt-nk-FaQ"/>
+                                            <constraint firstItem="QMc-J8-XbC" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" id="0Qt-nk-FaQ"/>
                                             <constraint firstItem="dvV-uF-xN4" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" multiplier="0.88" id="1ow-Kb-0OQ"/>
-                                            <constraint firstItem="QMc-J8-XbC" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="1.41" id="2Lp-fS-tbm"/>
+                                            <constraint firstItem="QMc-J8-XbC" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="1.4" id="2Lp-fS-tbm"/>
                                             <constraint firstItem="IfC-1L-A9z" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" id="2nJ-KM-CWw"/>
                                             <constraint firstItem="zSV-Eh-Xfi" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.101449" id="6lP-0w-egy"/>
                                             <constraint firstItem="IfC-1L-A9z" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.4" id="6tI-tT-tTY"/>
-                                            <constraint firstItem="dvV-uF-xN4" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="1.87" id="C77-jv-fOB"/>
+                                            <constraint firstItem="dvV-uF-xN4" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="1.85" id="C77-jv-fOB"/>
                                             <constraint firstItem="Pyd-hc-tG1" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.4" id="Cik-u7-0V9"/>
                                             <constraint firstAttribute="height" constant="1200" id="Goe-hf-HlR"/>
                                             <constraint firstItem="Prh-nV-rae" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="0.8" id="LDb-6a-b0L"/>
@@ -148,9 +185,9 @@
                                             <constraint firstItem="ELQ-cX-bvG" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.3" id="XtT-6x-yUQ"/>
                                             <constraint firstItem="mRD-we-kKS" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.0225" id="ZxK-K2-5yY"/>
                                             <constraint firstItem="Pyd-hc-tG1" firstAttribute="centerX" secondItem="L25-dx-m2k" secondAttribute="centerX" constant="1" id="axT-lO-ef8"/>
-                                            <constraint firstItem="zSV-Eh-Xfi" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="1.87" id="bxF-I1-bJR"/>
+                                            <constraint firstItem="zSV-Eh-Xfi" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="1.85" id="bxF-I1-bJR"/>
                                             <constraint firstItem="Prh-nV-rae" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.2" id="fdO-Xj-TtY"/>
-                                            <constraint firstItem="QMc-J8-XbC" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.4" id="kPx-Td-H4v"/>
+                                            <constraint firstItem="QMc-J8-XbC" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.38" id="kPx-Td-H4v"/>
                                             <constraint firstItem="mRD-we-kKS" firstAttribute="width" secondItem="L25-dx-m2k" secondAttribute="width" multiplier="0.342995" id="lZI-KM-e5Y"/>
                                             <constraint firstItem="IfC-1L-A9z" firstAttribute="centerY" secondItem="L25-dx-m2k" secondAttribute="centerY" multiplier="0.4" id="lq1-Je-RBe"/>
                                             <constraint firstItem="Pyd-hc-tG1" firstAttribute="height" secondItem="L25-dx-m2k" secondAttribute="height" multiplier="0.125" id="lsF-Rx-zyd"/>
@@ -182,9 +219,13 @@
                             <constraint firstItem="dfN-HQ-yD8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zOI-MD-Ngx"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Perfil" id="ict-ce-KZz"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="415" height="1200"/>
                     <connections>
                         <outlet property="collectionView" destination="Prh-nV-rae" id="5l5-wo-meE"/>
+                        <outlet property="comentarios" destination="QMc-J8-XbC" id="h9h-as-eUq"/>
                         <outlet property="star1" destination="3A2-KU-lZe" id="jEo-Qh-pVd"/>
                         <outlet property="star2" destination="xkk-si-j6f" id="MA7-s2-S2h"/>
                         <outlet property="star3" destination="GID-6N-hL9" id="sFx-ry-GjC"/>
@@ -196,13 +237,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.925233644859812" y="79.049676025917933"/>
+            <point key="canvasLocation" x="918.92523364485976" y="79.049676025917933"/>
         </scene>
     </scenes>
     <resources>
         <image name="Jose Elgueta" width="752" height="752"/>
         <image name="astralunar" width="1920" height="1280"/>
-        <image name="line.diagonal.arrow" catalog="system" width="128" height="113"/>
+        <image name="chevron.forward.circle" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">

@@ -48,3 +48,16 @@ let illustrators: [Illustrator] = [
                 evaluation: 4,
                 illustrations: ["BlueTurtle", "Flamingos", "PinkFlamingo"])
 ]
+
+struct Sunset {
+    let comment: String
+    let imageName: String
+}
+
+let comments: [Sunset] = [
+    Sunset(comment: "Que lindo", imageName: "Aleksandr Kayda"),
+    Sunset(comment: "Gostei das cores", imageName: "Osmar Aqil"),
+    Sunset(comment: "Que sensibilidade", imageName: "Valeria Gruper"),
+    Sunset(comment: "Nao gostei muito", imageName: "Lilit Martirosyan"),
+    Sunset(comment: "Me emocionou", imageName: "Tracie Andrews")
+]
